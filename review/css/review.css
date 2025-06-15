@@ -374,7 +374,7 @@ body {
     background: #f8f9fa;
     padding: 1.5rem;
     border-radius: 8px;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .lens-card h3 {
@@ -387,6 +387,206 @@ body {
 
 .lens-card i {
     color: #3498db;
+}
+
+.lens-content {
+    margin-bottom: 1.5rem;
+}
+
+.lens-intro {
+    font-size: 1.1rem;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.lens-project {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: white;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+}
+
+.lens-project:last-child {
+    margin-bottom: 0;
+}
+
+.lens-project h4 {
+    color: #2c3e50;
+    margin: 1rem 0;
+    font-size: 1.1rem;
+}
+
+.lens-project h4:first-child {
+    margin-top: 0;
+}
+
+.lens-project p {
+    color: #34495e;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.lens-project p:last-child {
+    margin-bottom: 0;
+}
+
+.lens-project strong {
+    color: #2c3e50;
+}
+
+/* Feedback Container Styles within Lens Cards */
+.lens-card .feedbacks-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.lens-card .feedback-block {
+    background: white;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+    border: 1px solid #e0e0e0;
+    width: calc(50% - 0.5rem);
+    flex: 0 0 auto;
+}
+
+.lens-card .feedback-block:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.lens-card .feedback-text {
+    margin-bottom: 1rem;
+    height: auto;
+    overflow-y: visible;
+}
+
+.lens-card .feedback-text p {
+    font-style: italic;
+    color: #2c3e50;
+    line-height: 1.4;
+    position: relative;
+    padding: 0 1rem;
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+.lens-card .feedback-text p::before,
+.lens-card .feedback-text p::after {
+    content: '"';
+    font-size: 1.5rem;
+    color: #3498db;
+    position: absolute;
+}
+
+.lens-card .feedback-text p::before {
+    left: -0.25rem;
+    top: -0.25rem;
+}
+
+.lens-card .feedback-text p::after {
+    right: -0.25rem;
+    bottom: -0.75rem;
+}
+
+.lens-card .feedback-author {
+    text-align: center;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.lens-card .author-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #3498db;
+    flex-shrink: 0;
+}
+
+.lens-card .author-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.lens-card .author-info {
+    text-align: left;
+    flex-grow: 1;
+}
+
+.lens-card .author-info h4 {
+    color: #2c3e50;
+    margin-bottom: 0.25rem;
+    font-size: 0.95rem;
+}
+
+.lens-card .author-info p {
+    color: #7f8c8d;
+    font-size: 0.85rem;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .lens-card .feedback-block {
+        width: 100%;
+    }
+}
+
+@media print {
+    .lens-card {
+        page-break-inside: avoid;
+        margin-bottom: 1rem;
+    }
+
+    .lens-card .feedbacks-container {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .lens-card .feedback-block {
+        box-shadow: none;
+        border: 1px solid #dee2e6;
+        page-break-inside: avoid;
+        width: 100%;
+    }
+
+    .lens-card .feedback-text {
+        height: auto;
+    }
+
+    .lens-card .feedback-block:hover {
+        transform: none;
+        box-shadow: none;
+    }
+
+    .lens-project {
+        page-break-inside: avoid;
+        border: 1px solid #dee2e6;
+        margin-bottom: 1rem;
+    }
+
+    .lens-intro {
+        font-size: 1rem;
+    }
+
+    .lens-project h4 {
+        font-size: 1rem;
+    }
+
+    .lens-project p {
+        font-size: 0.95rem;
+    }
 }
 
 /* Feedbacks and Future Focus Sections */
@@ -711,5 +911,54 @@ body {
 
     .focus-list span {
         font-size: 1rem;
+    }
+}
+
+/* References Section Styles */
+.references-section {
+    padding: 2rem 0;
+    background-color: #f8f9fa;
+    margin: 2rem 0;
+}
+
+.references-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.references-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.references-table tr {
+    border-bottom: 1px solid #dee2e6;
+}
+
+.references-table tr:last-child {
+    border-bottom: none;
+}
+
+.references-table td {
+    padding: 1.5rem;
+    line-height: 1.6;
+}
+
+.references-table strong {
+    color: #2c3e50;
+    font-size: 1.1rem;
+}
+
+@media print {
+    .references-section {
+        page-break-inside: avoid;
+        background-color: transparent;
+        margin: 1rem 0;
+    }
+
+    .references-table td {
+        padding: 1rem;
     }
 } 
