@@ -1,15 +1,17 @@
 # Sristi Raj - Personal Portfolio
 
-A modern, responsive personal portfolio website showcasing my professional experience, skills, and projects in data engineering and architecture.
+A modern, responsive personal portfolio website showcasing my professional experience, skills, and projects in Data Engineering, ML Engineering, Gen AI and Data Architecture.
 
 ## 👨‍💻 About Me
 
-I am a Data Engineer & Architect with over 11 years of experience in designing and implementing data solutions. My expertise lies in:
+I am a Data Engineering, ML Engineering, Gen AI and Data Architecture professional with over 11 years of experience in designing and implementing data solutions. My expertise lies in:
 
 - **Cloud Data Engineering**: Specializing in AWS, Databricks, and EMR for building scalable data solutions
 - **Data Architecture**: Designing and implementing data lakes and data warehouses
 - **Data Migration**: Successfully migrating on-premise data solutions to cloud platforms
 - **Business Intelligence**: Creating data models and analytics solutions for business insights
+- **Machine Learning**: Developing and deploying ML models
+- **Generative AI**: Implementing and optimizing Gen AI solutions
 
 ### Professional Experience
 
