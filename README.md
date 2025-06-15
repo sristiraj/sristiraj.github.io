@@ -2,6 +2,36 @@
 
 A modern, responsive personal portfolio website showcasing my professional experience, skills, and projects in data engineering and architecture.
 
+## 👨‍💻 About Me
+
+I am a Data Engineer & Architect with over 11 years of experience in designing and implementing data solutions. My expertise lies in:
+
+- **Cloud Data Engineering**: Specializing in AWS, Databricks, and EMR for building scalable data solutions
+- **Data Architecture**: Designing and implementing data lakes and data warehouses
+- **Data Migration**: Successfully migrating on-premise data solutions to cloud platforms
+- **Business Intelligence**: Creating data models and analytics solutions for business insights
+
+### Professional Experience
+
+- **Senior Data Engineer** at Gilead Sciences
+  - Leading data engineering initiatives
+  - Designing and implementing cloud-based data solutions
+  - Mentoring team members and driving best practices
+
+- **Data Engineering Consultant**
+  - Delivered multiple successful data migration projects
+  - Implemented data quality frameworks
+  - Optimized data processing pipelines
+
+### Core Competencies
+
+- Data Lake Architecture
+- ETL/ELT Pipeline Development
+- Data Modeling
+- Cloud Migration
+- Performance Optimization
+- Team Leadership
+
 ## 🌟 Features
 
 - **Modern Design**: Clean and professional layout with glassmorphism effects
