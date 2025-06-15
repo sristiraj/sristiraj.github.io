@@ -310,6 +310,39 @@ main {
     background: #2980b9;
 }
 
+/* LinkedIn Login Button */
+.linkedin-login {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.linkedin-btn {
+    background: #0077b5;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.linkedin-btn:hover {
+    background: #005582;
+}
+
+.linkedin-btn i {
+    font-size: 1.2rem;
+}
+
+/* Hide login button when connected */
+.connected .linkedin-login {
+    display: none;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .nav-links {
