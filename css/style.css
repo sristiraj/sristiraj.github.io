@@ -113,15 +113,83 @@ main {
 
 /* About Section */
 .about-content {
-    display: grid;
-    gap: 2rem;
-    margin-top: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.about-text {
+    line-height: 1.8;
 }
 
 .about-text p {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     font-size: 1.1rem;
+}
+
+.experience-item {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.experience-item h4 {
     color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.experience-item ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.experience-item ul li {
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.experience-item ul li:before {
+    content: "•";
+    color: #3498db;
+    position: absolute;
+    left: 0;
+}
+
+.competencies {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.competency-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.competency-item:hover {
+    transform: translateY(-5px);
+}
+
+.competency-item i {
+    color: #3498db;
+    font-size: 1.2rem;
+}
+
+.competency-item span {
+    font-weight: 500;
 }
 
 /* Skills Section */
@@ -258,5 +326,23 @@ main {
     
     #home h2 {
         font-size: 1.2rem;
+    }
+    
+    .competencies {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .experience-item {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .competencies {
+        grid-template-columns: 1fr;
+    }
+    
+    .about-text p {
+        font-size: 1rem;
     }
 } 
