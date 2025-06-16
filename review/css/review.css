@@ -36,89 +36,42 @@ body {
     body {
         background: white;
         font-size: 12pt;
+        padding: 0;
     }
 
     .container {
         padding: 0;
         max-width: 100%;
-    }
-
-    /* Page 1: About Section */
-    .profile-section {
-        page-break-after: always;
-        margin-bottom: 0;
-        padding: 1rem;
         box-shadow: none;
-        border: 1px solid #ddd;
+        margin: 0;
     }
 
-    /* Page 2: Performance Partners */
-    .partners-section {
-        page-break-after: always;
-        margin-bottom: 0;
-        padding: 1rem;
-        box-shadow: none;
-        border: 1px solid #ddd;
-    }
-
-    /* Page 3: References */
-    .references-section {
-        page-break-after: always;
-        margin-bottom: 0;
-        padding: 1rem;
-        box-shadow: none;
-        border: 1px solid #ddd;
-    }
-
-    /* Page 4: Client Lens */
-    .lens-card:nth-of-type(1) {
-        page-break-after: always;
-        margin-bottom: 0;
-        padding: 1rem;
-        box-shadow: none;
-        border: 1px solid #ddd;
-    }
-
-    /* Page 5: Technology Industry Lens */
-    .lens-card:nth-of-type(2) {
-        page-break-after: always;
-        margin-bottom: 0;
-        padding: 1rem;
-        box-shadow: none;
-        border: 1px solid #ddd;
-    }
-
-    /* Page 6: Technologist Lens */
-    .lens-card:nth-of-type(3) {
-        page-break-after: always;
-        margin-bottom: 0;
-        padding: 1rem;
-        box-shadow: none;
-        border: 1px solid #ddd;
-    }
-
-    /* Page 7: Commercial Growth and Social Change Lenses */
-    .lens-card:nth-of-type(4),
-    .lens-card:nth-of-type(5) {
-        margin-bottom: 1rem;
-        padding: 1rem;
-        box-shadow: none;
-        border: 1px solid #ddd;
-    }
-    .lens-card:nth-of-type(4) {
-        page-break-after: avoid;
-    }
-    .lens-card:nth-of-type(5) {
-        page-break-after: always;
-    }
-
-    /* Page 8: Future Focus */
+    /* Force each section to start on a new page */
+    .profile-section,
+    .partners-section,
+    .references-section,
+    .lens-card,
     .future-focus-section {
         page-break-before: always;
-        margin-bottom: 0;
-        padding: 1rem;
+        page-break-after: always;
+        margin: 0;
+        padding: 0;
         box-shadow: none;
-        border: 1px solid #ddd;
+        border: none;
+    }
+
+    /* Remove background colors and shadows for print */
+    .profile-section,
+    .partners-section,
+    .references-section,
+    .lens-card,
+    .future-focus-section,
+    .partner-card,
+    .feedback-block,
+    .lens-project {
+        background: none;
+        box-shadow: none;
+        border: none;
     }
 
     /* Adjust font sizes for print */
@@ -164,7 +117,34 @@ body {
         margin-top: 1rem;
         padding: 1rem;
         box-shadow: none;
+        border: none;
+    }
+
+    /* Ensure lens content prints properly */
+    .lens-content {
+        margin-bottom: 1rem;
+    }
+
+    .lens-intro {
+        font-size: 12pt;
+        margin-bottom: 1rem;
+    }
+
+    .lens-project {
+        margin-bottom: 1rem;
+        padding: 0.5rem;
         border: 1px solid #ddd;
+    }
+
+    /* Ensure feedbacks within lens cards print properly */
+    .lens-card .feedbacks-container {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .lens-card .feedback-block {
+        width: 100%;
+        margin-bottom: 0.5rem;
     }
 }
 
