@@ -36,49 +36,79 @@ body {
         max-width: 100%;
     }
 
+    /* Page 1: About Section */
     .profile-section {
-        page-break-after: avoid;
-        margin-bottom: 1.5rem;
+        page-break-after: always;
+        margin-bottom: 0;
         padding: 1rem;
         box-shadow: none;
         border: 1px solid #ddd;
     }
 
+    /* Page 2: Performance Partners */
     .partners-section {
-        page-break-inside: avoid;
-        margin-bottom: 1.5rem;
+        page-break-after: always;
+        margin-bottom: 0;
         padding: 1rem;
         box-shadow: none;
         border: 1px solid #ddd;
     }
 
-    .lenses-section {
-        page-break-inside: avoid;
-        margin-bottom: 1.5rem;
+    /* Page 3: References */
+    .references-section {
+        page-break-after: always;
+        margin-bottom: 0;
         padding: 1rem;
         box-shadow: none;
         border: 1px solid #ddd;
     }
 
-    .feedbacks-section {
-        page-break-inside: avoid;
-        margin-bottom: 1.5rem;
+    /* Page 4: Client Lens */
+    .lens-card:nth-of-type(1) {
+        page-break-after: always;
+        margin-bottom: 0;
         padding: 1rem;
         box-shadow: none;
         border: 1px solid #ddd;
     }
 
+    /* Page 5: Technology Industry Lens */
+    .lens-card:nth-of-type(2) {
+        page-break-after: always;
+        margin-bottom: 0;
+        padding: 1rem;
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+
+    /* Page 6: Technologist Lens */
+    .lens-card:nth-of-type(3) {
+        page-break-after: always;
+        margin-bottom: 0;
+        padding: 1rem;
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+
+    /* Page 7: Commercial Growth and Social Change Lenses */
+    .lens-card:nth-of-type(4),
+    .lens-card:nth-of-type(5) {
+        margin-bottom: 1rem;
+        padding: 1rem;
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+    .lens-card:nth-of-type(4) {
+        page-break-after: avoid;
+    }
+    .lens-card:nth-of-type(5) {
+        page-break-after: always;
+    }
+
+    /* Page 8: Future Focus */
     .future-focus-section {
-        page-break-inside: avoid;
-        margin-bottom: 1.5rem;
-        padding: 1rem;
-        box-shadow: none;
-        border: 1px solid #ddd;
-    }
-
-    .footer {
-        page-break-inside: avoid;
-        margin-top: 1.5rem;
+        page-break-before: always;
+        margin-bottom: 0;
         padding: 1rem;
         box-shadow: none;
         border: 1px solid #ddd;
@@ -119,6 +149,15 @@ body {
 
     .feedback-block {
         page-break-inside: avoid;
+    }
+
+    /* Footer */
+    .footer {
+        page-break-before: avoid;
+        margin-top: 1rem;
+        padding: 1rem;
+        box-shadow: none;
+        border: 1px solid #ddd;
     }
 }
 
