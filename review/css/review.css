@@ -11,12 +11,19 @@ body {
     color: #333;
     background-color: #f5f5f5;
     min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
 }
 
 .container {
-    max-width: 100%;
+    width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 0 2rem;
+    background: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
 /* Print Styles */
@@ -999,5 +1006,23 @@ body {
 
     .references-table td {
         padding: 1rem;
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 1240px) {
+    .container {
+        margin: 0 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 1rem 0;
+    }
+    
+    .container {
+        margin: 0 0.5rem;
+        padding: 0 1rem;
     }
 } 
